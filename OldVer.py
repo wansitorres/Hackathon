@@ -1,20 +1,17 @@
-import os
-import openai
-import numpy as np
-import pandas as pd
-from langchain.agents import Tool, AgentExecutor, create_react_agent
+from langchain_community.utilities import GoogleSearchAPIWrapper
+from langchain_community.tools import Tool
+from langchain.agents import AgentExecutor, create_react_agent
 from langchain_openai import ChatOpenAI
-from langchain_community.tools import DuckDuckGoSearchRun
 from langchain.prompts import PromptTemplate
-from typing import List, Dict
+from typing import Dict, List
+import json
 import requests
 from PIL import Image
-import imagehash
 from io import BytesIO
-import json
+import imagehash
 
 class RealEstateSafetyAgent:
-    def __init__(self, openai_api_key: str):
+    def __init__(self, openai_api_key: str, google_api_key: str, google_cse_id: str):
         # Initialize the LLM
         self.llm = ChatOpenAI(
             temperature=0,
@@ -23,7 +20,10 @@ class RealEstateSafetyAgent:
         )
         
         # Initialize tools
-        self.search = DuckDuckGoSearchRun()
+        self.search = GoogleSearchAPIWrapper(
+            google_api_key=google_api_key,
+            google_cse_id=google_cse_id
+        )
         
         # Create tools list
         self.tools = [
@@ -196,9 +196,8 @@ class RealEstateSafetyAgent:
         pass
 
 # Initialize the agent
-agent = RealEstateSafetyAgent(openai_api_key="")
+agent = RealEstateSafetyAgent(openai_api_key="", google_api_key="", google_cse_id="")
 
-# Example listing data
 listing_data = {
     "address": "123 Main St, City, State",
     "price": 500000,
