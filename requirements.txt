@@ -1,0 +1,6 @@
+langchain 
+langchain-openai 
+pillow 
+imagehash 
+requests 
+duckduckgo-search
