@@ -1,0 +1,26 @@
+### Input Data was based on a real listing in a real-estate website
+
+Property Details Validation:
+
+Using the 'Search' tool, I found that the property name "4 STOREY TOWNHOUSE FOR SALE IN KAMUNING QUEZON CITY" is a valid property listing. The property type is a 'House', which is consistent with the listing. The location "Kamuning, Quezon City" is a valid location. The lot area of 80 sqm and floor area of 121 sqm are reasonable for a 4-storey townhouse. The property has 4 bedrooms and 5 bathrooms, which is also reasonable for a 4-storey townhouse. The price of 17,000,000 
+PHP is within the average price range for similar properties in the same location.
+
+Image Validation Results:
+
+Using the 'ValidateImages' tool, the image provided in the listing was found to be authentic and matches the property description.
+
+Sentiment Analysis from Reviews:
+
+Using the 'AnalyzeSentiment' tool, the sentiment from the reviews is generally positive. The reviewers praised the professionalism and responsiveness of the lister, although one reviewer mentioned that some negotiations took longer than expected.
+
+Lister Verification:
+
+Using the 'VerifyLister' tool, the lister "Jeffrey Lock" was verified as a legitimate real estate lister.
+
+Overall Trust Score:
+
+Based on the property details validation, image validation, sentiment analysis from reviews, and lister verification, the overall trust score for this property listing is high.
+
+Potential Red Flags:
+
+There are no major red flags in this property listing. However, potential buyers should be aware that negotiations may take longer than expected based on one of the reviews.`
