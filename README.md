@@ -1,4 +1,5 @@
 # PropGuard
+This was made by Juan Cesar Torres along with Xiorence Cai, Noela Bunag, Ronald Pat Pascual, and Christine Chagas as a submission for Hack The Future Hackathon.
 
 ## Overview
 PropGuard is a Python-based application designed to validate real estate listings by leveraging advanced AI agents. It ensures the authenticity and accuracy of property details, images, and reviews, providing a comprehensive analysis to potential buyers and real estate professionals.
