@@ -1,4 +1,4 @@
-#Input Data was based on a real listing in a real-estate website
+#Input Data was based on a real listing on a real-estate website
 
 Property Details Validation:
 
